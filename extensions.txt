@@ -1,2 +1,3 @@
-// themes: the dark theme in settings.json comes from this extension
+// themes: the dark and light themes in settings.json come from these extensions
 high-contrast-themes@0.1.0
+zacess-themes@0.1.5
