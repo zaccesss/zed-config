@@ -1,0 +1,2 @@
+// themes: the dark theme in settings.json comes from this extension
+high-contrast-themes@0.1.0

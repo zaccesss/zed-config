@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a vulnerability
+    url: https://github.com/zaccesss/zed-config/security/policy
+    about: For a security issue, follow SECURITY.md rather than opening a public issue.
+  - name: More about me and my work
+    url: https://isaacadjei.me
+    about: My site, with contact details.
