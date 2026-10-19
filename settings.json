@@ -9,9 +9,13 @@
 {
   "ui_font_size": 16,
   "buffer_font_size": 15,
+  "auto_install_extensions": {
+    "high-contrast-themes": true,
+    "zacess-themes": true,
+  },
   "theme": {
     "mode": "system",
-    "light": "One Light",
+    "light": "Zacess Light",
     "dark": "High Contrast VSCode",
   },
 }

@@ -9,6 +9,17 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+
+- Light mode now uses `Zacess Light` from the Zacess Themes extension instead of `One Light`.
+  Every syntax colour now reaches 8.37:1 or more, where most of `One Light`'s fell below 4.5:1
+- `settings.json` sets `auto_install_extensions` for `high-contrast-themes` and `zacess-themes`,
+  so Zed installs both theme extensions on its own
+- `extensions.txt` adds `zacess-themes@0.1.5`
+- `ACCESSIBILITY.md` replaces the `One Light` low-contrast warning with measured `Zacess Light`
+  figures
+- The README and guides name the new theme and the second extension
+
 ### Added
 
 - Initial release: `settings.json` with interface and editor font sizes and a theme that follows

@@ -37,17 +37,20 @@ Copy-Item "$HOME\.zed-config-src\settings.json" "$env:APPDATA\Zed\settings.json"
 > This overwrites the existing `settings.json`. Back up the old file first if it has settings
 > worth keeping.
 
-## 4. Install the extension
+## 4. Install the extensions
 
-Open the Extensions page with `Cmd+Shift+X` on macOS (`Ctrl+Shift+X` on Windows and Linux),
-search for **High Contrast Themes** and install it. Zed always installs the latest version, the
-version in `extensions.txt` only records the one this config was last checked against.
+`settings.json` lists both theme extensions under `auto_install_extensions`, so Zed installs
+High Contrast Themes and Zacess Themes on its own the next time it starts with this file. To install
+them by hand instead, open the Extensions page with `Cmd+Shift+X` on macOS (`Ctrl+Shift+X` on
+Windows and Linux), search for **High Contrast Themes** and **Zacess Themes** and install both.
+Zed always installs the latest version, the versions in `extensions.txt` only record the ones this
+config was last checked against.
 
 ## Verify it worked
 
 1. Switch the system to dark mode. Zed should show black backgrounds with white text
    (`High Contrast VSCode`).
-2. Switch the system to light mode. Zed should change to `One Light` on its own.
+2. Switch the system to light mode. Zed should change to `Zacess Light` on its own.
 3. Open the theme picker with `Cmd+K` then `Cmd+T` (`Ctrl+K` then `Ctrl+T` on Windows and Linux)
    to confirm both theme names exist.
 
