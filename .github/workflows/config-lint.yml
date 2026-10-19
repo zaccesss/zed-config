@@ -1,0 +1,58 @@
+name: Config Lint
+
+# zed reads settings.json as JSON with comments and trailing commas, so both are
+# stripped before parsing.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Validate settings and extensions
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Parse settings.json
+        run: |
+          python3 - <<'PYEOF'
+          import json, re, sys
+
+          path = "settings.json"
+          text = re.sub(r"(?m)^\s*//.*$", "", open(path).read())
+          text = re.sub(r",(\s*[}\]])", r"\1", text)
+          try:
+              json.loads(text)
+              print("ok", path)
+          except ValueError as e:
+              print(f"::error file={path}::{e}")
+              sys.exit(1)
+          PYEOF
+
+      - name: Check every extension line is id@version or a // comment
+        run: |
+          hit=0
+          while IFS= read -r line; do
+            [ -z "$line" ] && continue
+            case "$line" in
+              //*) continue ;;
+              *@*) continue ;;
+              *)
+                echo "::error file=extensions.txt::malformed line: $line"
+                hit=1
+                ;;
+            esac
+          done < extensions.txt
+          exit "$hit"
