@@ -48,11 +48,12 @@ config was last checked against.
 
 ## Verify it worked
 
-1. Switch the system to dark mode. Zed should show black backgrounds with white text
-   (`High Contrast VSCode`).
-2. Switch the system to light mode. Zed should change to `Zacess Light` on its own.
-3. Open the theme picker with `Cmd+K` then `Cmd+T` (`Ctrl+K` then `Ctrl+T` on Windows and Linux)
-   to confirm both theme names exist.
+1. Zed should show black backgrounds with white text (`Zacess Deep Contrast Dark`), in light and
+   dark mode alike.
+2. Open the theme picker with `Cmd+K` then `Cmd+T` (`Ctrl+K` then `Ctrl+T` on Windows and Linux)
+   to confirm all eight Zacess theme names exist.
+3. To follow the system instead, set `theme.mode` to `system`. Picking a theme in the picker
+   writes it into `settings.json`, so it stays until changed again.
 
 ## Updating after a change to this repo
 
