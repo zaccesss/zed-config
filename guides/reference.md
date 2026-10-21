@@ -10,9 +10,9 @@ knowing.
 | `ui_font_size` | `16` | Zed's own default, pinned so a change to Zed's defaults never shrinks the interface text. |
 | `buffer_font_size` | `15` | Zed's own default for editor text, pinned for the same reason. |
 | `auto_install_extensions` | `high-contrast-themes` and `zacess-themes` set to `true` | Zed installs both theme extensions on its own, so a new machine gets both themes without a manual step. |
-| `theme.mode` | `system` | Follows the system's light and dark mode. |
-| `theme.dark` | `High Contrast VSCode` | White text on pure black with VS Code's high-contrast syntax colours. Comes from the High Contrast Themes extension, not Zed itself. |
-| `theme.light` | `Zacess Light` | Near-black on white with every syntax colour at 8.37:1 or more, the light counterpart to the dark theme. Comes from the Zacess Themes extension, not Zed itself. |
+| `theme.mode` | `dark` | The theme stays on `theme.dark` whatever the system appearance. `system` follows light and dark mode with the pair below and `light` fixes the light theme. |
+| `theme.dark` | `Zacess Deep Contrast Dark` | White text on pure black at 21:1 with deep, fully saturated colours at 9.0:1 or more. Comes from the Zacess Themes extension, not Zed itself. |
+| `theme.light` | `Zacess Deep Contrast Light` | Black on white at 21:1 with vivid colours at 7.7:1 or more, the light counterpart. Comes from the Zacess Themes extension, not Zed itself. |
 
 The comment block at the top of the file is the comment Zed writes into a new settings file, left in place. Zed reads the
 file as JSON with comments and trailing commas, so a strict JSON parser rejects it.
@@ -21,8 +21,8 @@ file as JSON with comments and trailing commas, so a strict JSON parser rejects 
 
 | Extension | Version | Why |
 | --- | --- | --- |
-| `high-contrast-themes` | `0.1.0` | Provides `High Contrast VSCode` and nine other high-contrast dark themes. |
-| `zacess-themes` | `0.1.5` | Provides `Zacess Light`, `Zacess Dark`, `Zacess Yellow on Black` and `Zacess Cream`. |
+| `high-contrast-themes` | `0.1.0` | Adds `High Contrast VSCode` and nine other high-contrast dark themes to the picker. Not used by default. |
+| `zacess-themes` | `0.3.0` | Provides all eight Zacess themes, the two Deep Contrast themes among them. |
 
 Zed also installs the `html` extension on its own through its default `auto_install_extensions`
 setting, which Zed merges with the two entries here, so it is not listed.

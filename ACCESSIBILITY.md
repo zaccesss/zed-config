@@ -1,22 +1,19 @@
 # Accessibility
 
-Both themes put contrast first and the theme follows the system, so Zed changes with the terminal and the other editors.
+The theme puts contrast first and stays fixed on `Zacess Deep Contrast Dark` until it is changed by hand.
 
 > [!NOTE]
 > Some of these settings are preferences rather than requirements. Change them freely in your own copy. If a change would help other people too, open an issue or a pull request so I can consider it for everyone.
 
 ## Vision
 
-- Dark mode uses `High Contrast VSCode` from the High Contrast Themes extension: white text on pure black at 21:1. Every syntax colour reaches 7:1 or more on the black background except regular expressions (`#d16969`, 5.94:1). Comments are green (`#7ca668`) at 7.51:1.
-- Muted interface text (`#a6a6a6`) reaches 8.63:1. Errors (`#f48771`, 8.55:1), warnings (`#cca700`, 9.09:1) and information (`#75beff`, 10.57:1) all stay well above 4.5:1.
-- The focused element gets a bright yellow border (`#f8f800`, 18.42:1) and other borders are cyan (`#6fc3df`, 10.55:1), so focus is clear without relying on a subtle shade.
-- The current line number is white. Other line numbers are grey (`#6b6b6b`) at 3.94:1, the theme's own choice to keep them quieter than the code.
-- Light mode uses `Zacess Light` from the Zacess Themes extension: near-black text (`#111111`) on white at 18.88:1. Every syntax colour reaches 8.37:1 or more, the lowest being comments (`#434f5b`) at 8.37:1. Functions and links (`#0049a3`) are 8.46:1, keywords (`#58099c`) 10.86:1 and strings (`#004a0e`) 10.57:1.
-- In light mode muted interface text (`#424242`) is 10.05:1, errors (`#810005`) 10.85:1, warnings (`#583600`) 10.81:1 and information (`#003a84`) 10.83:1. Line numbers (`#4d4d4d`) are 8.45:1 and the focused border (`#0049a3`) 8.46:1.
+- The theme is `Zacess Deep Contrast Dark` from the Zacess Themes extension: white text on pure black at 21:1 with deep, fully saturated colours, every syntax colour at 9.0:1 or more. Keywords are blue (`#67aeff`, 9.1:1) and bold, comments green (`#00c600`, 9.1:1) and italic, strings orange (`#ffaa7c`, 11.3:1). The focused element gets a yellow outline and frames are cyan.
+- `Zacess Deep Contrast Light`, its light counterpart, is black on white with vivid colours at 7.7:1 or more. It is the `light` theme in `settings.json`, used when `theme.mode` is `light` or `system`.
+- All eight Zacess themes, plus the High Contrast Themes extension's dark themes, are in the theme picker. The full measured tables are in the [Zacess Themes accessibility statement](https://github.com/zacesshq/themes/blob/main/ACCESSIBILITY.md).
 - Interface text is 16 pixels and editor text 15 pixels. `Cmd+=` and `Cmd+-` (`Ctrl+=` and `Ctrl+-` on Windows and Linux) change the editor text for the current session. Raise `buffer_font_size` and `ui_font_size` in `settings.json` to make it permanent.
 
 > [!IMPORTANT]
-> `High Contrast VSCode` and `Zacess Light` only exist once the High Contrast Themes and Zacess Themes extensions are installed. `settings.json` lists both under `auto_install_extensions`, so Zed installs them on its own, see [guides/setup.md](guides/setup.md). Until then the themes do not get these colours.
+> The two Deep Contrast themes only exist once Zacess Themes 0.3.0 or later is installed. `settings.json` lists it under `auto_install_extensions`, so Zed installs it on its own, see [guides/setup.md](guides/setup.md). Until then Zed falls back to its default theme.
 
 ## Keyboard
 

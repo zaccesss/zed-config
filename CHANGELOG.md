@@ -9,6 +9,10 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+
+- The theme is now fixed on `Zacess Deep Contrast Dark` (`theme.mode` `dark`) with `Zacess Deep Contrast Light` as the light theme, from Zacess Themes 0.3.0, in place of `High Contrast VSCode` and `Zacess Light` following the system. `extensions.txt` records `zacess-themes@0.3.0`. All eight Zacess themes are in the picker.
+
 ## 2026-10-19
 
 ### Added

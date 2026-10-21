@@ -14,8 +14,8 @@
     "zacess-themes": true,
   },
   "theme": {
-    "mode": "system",
-    "light": "Zacess Light",
-    "dark": "High Contrast VSCode",
+    "mode": "dark",
+    "light": "Zacess Deep Contrast Light",
+    "dark": "Zacess Deep Contrast Dark",
   },
 }
