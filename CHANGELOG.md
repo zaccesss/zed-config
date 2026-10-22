@@ -9,6 +9,12 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.0.1] - 2026-10-22
+
+### Added
+
+- The built-in terminal uses `GeistMono Nerd Font` (`terminal.font_family`), so Nerd Font prompt symbols draw. The font is free and must be installed from the Nerd Fonts releases; `guides/reference.md` links it. The buffer font is unchanged.
+
 ### Changed
 
 - The theme is now fixed on `Zacess Deep Contrast Dark` (`theme.mode` `dark`) with `Zacess Deep Contrast Light` as the light theme, from Zacess Themes 0.3.0, in place of `High Contrast VSCode` and `Zacess Light` following the system. `extensions.txt` records `zacess-themes@0.3.0`. All eight Zacess themes are in the picker.
