@@ -5,7 +5,7 @@
 
 ## What's here
 
-- [`settings.json`](settings.json) - interface and editor font sizes and the theme, fixed on
+- [`settings.json`](settings.json) - interface and editor font sizes, the terminal font and the theme, fixed on
   `Zacess Deep Contrast Dark` with `Zacess Deep Contrast Light` as its light counterpart, plus
   `auto_install_extensions` so Zed installs both theme extensions on its own. Identical on every
   platform.
