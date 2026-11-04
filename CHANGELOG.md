@@ -9,9 +9,15 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-03
+
 ### Added
 
 - Screenshots of the editor in the Zacess themes, dark and light.
+
+### Changed
+
+- Routine tidy-up
 
 ## [0.0.1] - 2026-10-22
 
