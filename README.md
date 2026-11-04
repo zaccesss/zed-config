@@ -11,4 +11,8 @@ This repository's Zed configuration has moved to the `editors/zed` folder of the
 > [!NOTE]
 > This repository is archived and read-only.
 
-![Zed in the Zacess Deep Contrast Dark theme](docs/demo/zed-deep-contrast-dark.webp)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/demo/zed-deep-contrast-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="docs/demo/zed-deep-contrast-light.webp">
+  <img alt="Zed in the Zacess Deep Contrast Dark theme (the Zacess Deep Contrast Light theme in light mode)" src="docs/demo/zed-deep-contrast-dark.webp">
+</picture>
